@@ -1,0 +1,18 @@
+<!--
+#####	Author: Daniel Sundström	#####
+#####	Date: July 13, 2011 - Jul:07:46#####
+#####	License: MIT License		#####
+-->
+<h1>Session API</h1>
+<p>Post any string to set it in the session. Then go to the next page</p>
+<%= form_tag '/' do %>
+	<label>
+		String:
+	</label>
+	<input name="userstring" />
+	<br />
+	<input type="submit" value="Set in session" />
+<% end %>
+<br /><br />
+<h2>done?</h2>
+Then <a href="/next">proceed...</a>
