@@ -1,0 +1,6 @@
+<h1>Edit <%= @post.title %></h1>
+<%= form_tag(public_path(@post.title), {:method => :put}) do %>
+	<textarea name="post[body]"><%= @post.body %></textarea>
+	<br />
+	<input type="submit" value="Save" />
+<% end %>

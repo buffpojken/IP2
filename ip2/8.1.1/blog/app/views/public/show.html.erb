@@ -1,0 +1,2 @@
+<%= @post.title %> - <a href="<%= edit_public_path(@post.title) %>">edit</a><br /><br />
+<%= raw transform @post.body || "" %>
