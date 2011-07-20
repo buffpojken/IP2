@@ -1,0 +1,6 @@
+<%= @post.title %> - <a href="<%= edit_public_path(@post.title) %>">edit</a><br /><br />
+<%= raw transform @post.body || "" %>
+
+<% content_for :rss_tag do %>
+	<link rel="alternate" type="application/rss+xml" title="Experimental Blog/Wiki Platform" href="<%= request.env['HTTP_HOST']%>/publics/<%= @post.title %>/feed.rss">	
+<% end %>
